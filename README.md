@@ -8,7 +8,7 @@
 
 3. Run `make doc` in terminal to generate openApi.
 
-# 4. View Api in : https://scodus.github.io/multitenant-swagger/
+# 4. View Api in : https://leonschiffer.github.io/linkstack-swagger/
 
 #### Reference `https://joolfe.github.io/postman-to-openapi/`
 # multitenant-swagger
