@@ -17,12 +17,12 @@
             "url": "https://github.com/joolfe/logoBanner.png",
             "backgroundColor": "#FFFFFF",
             "altText": "logo"
-        },
-        "servers": [
-            {
-                "url": "https://link-stack.grgbishal.com",
-                "description": "server"
-            }
-        ]
-    }
+        }
+    },
+    "servers": [
+        {
+            "url": "https://link-stack.grgbishal.com",
+            "description": "server"
+        }
+    ]
 }
