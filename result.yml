@@ -1,0 +1,84 @@
+openapi: 3.0.0
+info:
+  title: LinkStack
+  description: Linkstack
+  version: '1.0'
+  x-logo:
+    url: https://github.com/joolfe/logoBanner.png
+    backgroundColor: '#FFFFFF'
+    altText: logo
+  termsOfService: '#'
+  contact:
+    name: Bishal
+    url: https://grgbishal.com
+    email: grgbishal360@gmail.com
+  license:
+    name: MIT
+    url: https://es.wikipedia.org/wiki/Licencia_MIT
+servers:
+  - url: http://{{url}}
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+tags:
+  - name: Auth
+  - name: Admin
+  - name: Admin > User
+paths:
+  /api/login:
+    post:
+      tags:
+        - Auth
+      summary: login
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                email: admin@admin.com
+                password: password
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: Accept
+          in: header
+          schema:
+            type: string
+          example: application/json
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/user:
+    post:
+      tags:
+        - Admin > User
+      summary: create user
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                name: Bishal Gurung
+                email: leon.schiffer360@gmail.com
+                password: password@123
+                theme: default
+                role: user
+                littlelink_name: ''
+                littlelink_description: ''
+      parameters:
+        - name: accept
+          in: header
+          schema:
+            type: string
+          example: application/json
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}

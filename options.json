@@ -1,0 +1,28 @@
+{
+    "info": {
+        "title": "LinkStack",
+        "version": "1.0",
+        "description": "Linkstack",
+        "termsOfService": "#",
+        "license": {
+            "name": "MIT",
+            "url": "https://es.wikipedia.org/wiki/Licencia_MIT"
+        },
+        "contact": {
+            "name": "Bishal",
+            "url": "https://grgbishal.com",
+            "email": "grgbishal360@gmail.com"
+        },
+        "xLogo": {
+            "url": "https://github.com/joolfe/logoBanner.png",
+            "backgroundColor": "#FFFFFF",
+            "altText": "logo"
+        },
+        "servers": [
+            {
+                "url": "https://link-stack.grgbishal.com",
+                "description": "server"
+            }
+        ]
+    }
+}
